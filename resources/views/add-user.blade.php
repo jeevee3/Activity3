@@ -23,24 +23,23 @@
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            color: #000; /* changed font color to black */
+            color: #000;
         }
 
         h2 {
             margin-bottom: 20px;
-            color: #000; /* black text */
+            color: #000;
         }
 
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
-            color: #000; /* black labels */
+            color: #000;
         }
 
         input[type="text"],
-        input[type="email"],
-        input[type="password"] {
+        input[type="email"] {
             width: 100%;
             padding: 8px;
             margin-bottom: 15px;
@@ -48,7 +47,7 @@
             border: 1px solid #ccc;
             font-size: 14px;
             background-color: rgba(255, 255, 255, 0.8);
-            color: #000; /* black text */
+            color: #000;
         }
 
         .btn {
@@ -125,12 +124,6 @@
 
             <label for="phone_number">Phone Number</label>
             <input type="text" name="phone_number" value="{{ old('phone_number') }}" required>
-
-            <label for="password">Password</label>
-            <input type="password" name="password" required>
-
-            <label for="password_confirmation">Confirm Password</label>
-            <input type="password" name="password_confirmation" required>
 
             <button type="submit" class="btn btn-success">Create</button>
         </form>

@@ -28,7 +28,7 @@ class UserController extends Controller
             'full_name' => 'required|string',
             'email' => 'required|email|unique:users',
             'phone_number' => 'required',
-            'password' => 'required|confirmed|min:4|max:8',
+            
         ]);
 
         try {
